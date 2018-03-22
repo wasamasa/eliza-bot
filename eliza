@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# echo I am the psychotherapist.  Please, describe your problems.  Each time
+# echo you are finished talking, type RET twice.
+# echo
+
+emacs -Q --batch --load eliza.el
