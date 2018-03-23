@@ -27,7 +27,7 @@ class Eliza
 
   def recv
     Timeout.timeout(0.1) { recv_message.rstrip }
-  rescue Timeout::ExitException
+  rescue Timeout::Error
     nil
   rescue IOError, Errno::EPIPE
     respawn
